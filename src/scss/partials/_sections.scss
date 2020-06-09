@@ -1,0 +1,100 @@
+.jumbotron {
+    @include sections_padding($padding: 30px);
+}
+
+%jumbotron_content {
+    width: 50%;
+    float: left;
+}
+
+.btn_secondary {
+    width: 100%;
+    padding: 10px 0;
+    button {
+        float: left;
+        padding: 10px;
+        background-color: MidnightBlue;
+        border: 0;
+        border-radius: 5px;
+        color: white;
+        font-family: $stile_caratteri_principale;
+        font-size: 15px;
+    }
+    span {
+        float: left;
+        margin: 0 15px;
+        line-height: 35px;
+        font-family: $stile_caratteri_principale;
+        color: gray;
+    }
+}
+
+.jumbotron-left {
+    @extend %jumbotron_content;
+    h1 {
+        color: $colore_principale;
+        font-size: 55px;
+        font-family: $stile_caratteri_principale;
+        font-weight: bold;
+    }
+    p {
+        color: $colore_principale;
+        font-family: $stile_caratteri_principale;
+        font-size: 25px;
+    }
+}
+
+.jumbotron-right {
+    @extend %jumbotron_content;
+    img {
+        width: 100%;
+        background-size: contain;
+    }
+}
+
+.background {
+    background-color: $background;
+}
+
+.traditional {
+    @include sections_padding($padding: 100px);
+    .traditional_top {
+        padding-bottom: $padding_bottom;
+        width: 70%;
+        margin: auto;
+        text-align: center;
+        font-family: $stile_caratteri_principale;
+        color: $colore_principale;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    .traditional_img {
+        width: 80%;
+        margin: auto;
+        @include flex_justify($justify: space-between);
+        .img {
+            text-align: center;
+            height: 150px;
+            width: 150px;
+            img {
+                width: 100%;
+            }
+            p {
+                color: $colore_principale;
+                font-family: $stile_caratteri_principale;
+            }
+        }
+    }
+    .bunny {
+        width: 100%;
+        padding-top: 70px;
+        .bunny_img {
+            width: 25%;
+            margin: auto;
+            height: 200px;
+            img {
+                width: 100%;
+            }
+        }
+    }
+}

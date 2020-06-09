@@ -1,0 +1,8 @@
+@mixin flex_justify ($justify) {
+    display: flex;
+    justify-content: $justify;
+}
+
+@mixin sections_padding ($padding) {
+    padding: $padding 0;
+}

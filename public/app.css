@@ -379,22 +379,10 @@ template {
   display: none;
 }
 
-.container {
-  width: 80%;
-  margin: auto;
-  padding-bottom: 15px;
-  border-bottom: 1px solid lightgray;
-}
-
 header {
   padding: 20px 0;
   width: 100%;
   height: 70px;
-}
-
-.flex {
-  display: flex;
-  justify-content: space-between;
 }
 
 .logo {
@@ -430,5 +418,134 @@ header {
   border: 1px solid blue;
   border-radius: 10px;
   background-color: white;
+}
+
+.jumbotron {
+  padding: 30px 0;
+}
+
+.jumbotron-right,
+.jumbotron-left {
+  width: 50%;
+  float: left;
+}
+
+.btn_secondary {
+  width: 100%;
+  padding: 10px 0;
+}
+
+.btn_secondary button {
+  float: left;
+  padding: 10px;
+  background-color: MidnightBlue;
+  border: 0;
+  border-radius: 5px;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+}
+
+.btn_secondary span {
+  float: left;
+  margin: 0 15px;
+  line-height: 35px;
+  font-family: "Roboto", sans-serif;
+  color: gray;
+}
+
+.jumbotron-left h1 {
+  color: #58402c;
+  font-size: 55px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+
+.jumbotron-left p {
+  color: #58402c;
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
+}
+
+.jumbotron-right img {
+  width: 100%;
+  background-size: contain;
+}
+
+.background {
+  background-color: #FFE7D2;
+}
+
+.traditional {
+  padding: 100px 0;
+}
+
+.traditional .traditional_top {
+  padding-bottom: 20px;
+  width: 70%;
+  margin: auto;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  color: #58402c;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.traditional .traditional_img {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.traditional .traditional_img .img {
+  text-align: center;
+  height: 150px;
+  width: 150px;
+}
+
+.traditional .traditional_img .img img {
+  width: 100%;
+}
+
+.traditional .traditional_img .img p {
+  color: #58402c;
+  font-family: "Roboto", sans-serif;
+}
+
+.traditional .bunny {
+  width: 100%;
+  padding-top: 70px;
+}
+
+.traditional .bunny .bunny_img {
+  width: 25%;
+  margin: auto;
+  height: 200px;
+}
+
+.traditional .bunny .bunny_img img {
+  width: 100%;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  padding-bottom: 15px;
+}
+
+.border_bottom {
+  border-bottom: 1px solid lightgray;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.clear:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
