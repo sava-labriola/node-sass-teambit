@@ -29,7 +29,7 @@
     }
 }
 
-.jumbotron-left {
+.left {
     @extend %jumbotron_content;
     h1 {
         color: $colore_principale;
@@ -44,7 +44,7 @@
     }
 }
 
-.jumbotron-right {
+.right {
     @extend %jumbotron_content;
     img {
         width: 100%;
@@ -95,6 +95,60 @@
             img {
                 width: 100%;
             }
+        }
+    }
+}
+
+.information {
+    @include sections_padding($padding: 100px);
+    padding-bottom: 170px;
+}
+
+.float_left {
+    float: left;
+}
+
+.float_right {
+    float: right;
+}
+
+.info_panel_1 {
+    width: 50%;
+    .info_img {
+        height: 300px;
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.info_panel_2 {
+    width: 30%;
+    .info_content {
+        h2 {
+            font-family: $stile_caratteri_principale;
+            color: $colore_principale;
+            font-size: 30px;
+        }
+        p {
+            font-family: $stile_caratteri_principale;
+            color: $colore_principale;
+            font-size: 20px;
+        }
+        a {
+            color: blue;
+            text-decoration: none;
+            font-family: $stile_caratteri_principale;
+            font-size: 25px;
+            font-weight: bold;
+        }
+    }
+    .content_img {
+        width: 50%;
+        margin: auto;
+        height: 150px;
+        img {
+            width: 100%;
         }
     }
 }

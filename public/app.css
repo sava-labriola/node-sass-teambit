@@ -424,8 +424,8 @@ header {
   padding: 30px 0;
 }
 
-.jumbotron-right,
-.jumbotron-left {
+.right,
+.left {
   width: 50%;
   float: left;
 }
@@ -454,20 +454,20 @@ header {
   color: gray;
 }
 
-.jumbotron-left h1 {
+.left h1 {
   color: #58402c;
   font-size: 55px;
   font-family: "Roboto", sans-serif;
   font-weight: bold;
 }
 
-.jumbotron-left p {
+.left p {
   color: #58402c;
   font-family: "Roboto", sans-serif;
   font-size: 25px;
 }
 
-.jumbotron-right img {
+.right img {
   width: 100%;
   background-size: contain;
 }
@@ -528,6 +528,121 @@ header {
   width: 100%;
 }
 
+.information {
+  padding: 100px 0;
+  padding-bottom: 170px;
+}
+
+.float_left {
+  float: left;
+}
+
+.float_right {
+  float: right;
+}
+
+.info_panel_1 {
+  width: 50%;
+}
+
+.info_panel_1 .info_img {
+  height: 300px;
+}
+
+.info_panel_1 .info_img img {
+  width: 100%;
+}
+
+.info_panel_2 {
+  width: 30%;
+}
+
+.info_panel_2 .info_content h2 {
+  font-family: "Roboto", sans-serif;
+  color: #58402c;
+  font-size: 30px;
+}
+
+.info_panel_2 .info_content p {
+  font-family: "Roboto", sans-serif;
+  color: #58402c;
+  font-size: 20px;
+}
+
+.info_panel_2 .info_content a {
+  color: blue;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.info_panel_2 .content_img {
+  width: 50%;
+  margin: auto;
+  height: 150px;
+}
+
+.info_panel_2 .content_img img {
+  width: 100%;
+}
+
+footer {
+  padding: 100px 0;
+}
+
+footer .help {
+  float: left;
+  width: 30%;
+}
+
+footer .help .help_img {
+  margin-right: 20px;
+  float: left;
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+}
+
+footer .help .help_img img {
+  width: 100%;
+}
+
+footer .help .teambit {
+  font-family: "Roboto", sans-serif;
+  color: #58402c;
+  width: calc(100% - 90px);
+  float: left;
+}
+
+ul li:first-of-type {
+  font-weight: bold;
+}
+
+.contact {
+  width: 70%;
+  float: left;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact ul {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  display: inline-block;
+  color: #58402c;
+}
+
+.contact ul li {
+  list-style-type: none;
+  padding-bottom: 10px;
+}
+
+.contact ul li a {
+  text-decoration: none;
+  color: #58402c;
+}
+
 .container {
   width: 80%;
   margin: auto;
@@ -547,5 +662,9 @@ header {
   content: "";
   display: table;
   clear: both;
+}
+
+button {
+  cursor: pointer;
 }
 

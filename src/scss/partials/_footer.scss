@@ -1,0 +1,47 @@
+footer {
+    @include sections_padding($padding: 100px);
+    .help {
+        float: left;
+        width: 30%;
+        .help_img {
+            margin-right: 20px;
+            float: left;
+            display: inline-block;
+            width: 70px;
+            height: 70px;
+            img {
+                width: 100%;
+            }
+        }
+        .teambit {
+            font-family: $stile_caratteri_principale;
+            color: $colore_principale;
+            width: calc(100% - 90px);
+            float: left;
+        }
+    }
+}
+
+ul li:first-of-type {
+    font-weight: bold;
+}
+
+.contact {
+    width: 70%;
+    float: left;
+    @include flex_justify($justify: space-between);
+    ul {
+        margin: 0;
+        font-family: $stile_caratteri_principale;
+        display: inline-block;
+        color: $colore_principale;
+        li {
+            list-style-type: none;
+            padding-bottom: 10px;
+            a {
+                text-decoration: none;
+                color: $colore_principale;
+            }
+        }
+    }
+}
